@@ -1,0 +1,42 @@
+p{
+	font-family: arial;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+button{
+	font-family: arial;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+input{
+	font-family: arial;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.Email{
+	font-family: Arial;
+	font-size: 14px;
+	color: grey;
+	margin-bottom: 5px;
+}
+.textb{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+	padding: 5px 100px;
+	margin-bottom: 10px;
+}
+.textMain{
+	font-family: Arial;
+	font-size: 14px;
+	color: grey;
+	margin-bottom: 10px;
+}
+.agreeButton{
+	background-color: darkblue;
+	color: white;
+	border-style: none;
+	border-radius: 20px;
+	padding: 10px 130px;
+}
