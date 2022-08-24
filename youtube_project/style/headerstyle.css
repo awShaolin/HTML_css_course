@@ -14,6 +14,8 @@
  	border-bottom-width: 1px;
  	border-bottom-style: solid;
  	border-bottom-color: rgb(228, 228, 228);
+
+ 	z-index: 100;
  }
 
 .left_section{
@@ -40,6 +42,13 @@
 	display: flex;
 	align-items: center;
 }
+.search_button,
+.voice_search_button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
 .search_button{
 	height: 40px;
 	width: 66px;
@@ -50,6 +59,29 @@
 	margin-left: -1px;
 	border-radius: 2px;
 	margin-right: 10px;
+	cursor: pointer;
+}
+.search_button div,
+.voice_search_button div{
+	position: absolute;
+	background-color: grey;
+	color: white;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 2px;
+	font-size: 12px;
+	font-family: Roboto, Arial;
+	bottom: -30px;
+	opacity: 0;
+	transition: opacity 0.5s;
+	pointer-events: none;
+	white-space: nowrap;
+}
+.search_button:hover div, 
+.voice_search_button:hover div{
+	opacity: 1;
 }
 .search{
 	height: 26px;
@@ -102,6 +134,24 @@
 
 .notification{
 	height: 24px;
+}
+.notification_conteiner{
+	position: relative;
+}
+.notifi_count{
+	position: absolute;
+	background-color: rgb(200, 0, 0);
+	color: white;
+	font-family: Roboto, Arial;
+	font-size: 11px;
+	font-weight: 500;
+	top: -3px;
+	right: -3px;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	border-radius: 10px;
 }
 .apps{
 	height: 24px;
